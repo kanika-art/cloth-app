@@ -2,9 +2,6 @@ import React from 'react';
 import { Carousel } from 'antd-mobile';
 
 export default class Swiper extends React.PureComponent {
-  defaultProps = {
-    data: ['1', '2', '3'],
-  }
 
   render() {
     const { data = [] } = this.props;
@@ -15,6 +12,7 @@ export default class Swiper extends React.PureComponent {
         >
           {data.map(item => (
             <div
+              key={item.id}
               style={{ width: '100%', height: 190 }}
             >
               <img

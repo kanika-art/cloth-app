@@ -2,7 +2,7 @@ import React from 'react';
 import { Tabs, WhiteSpace } from 'antd-mobile';
 
 export default class LeftMenu extends React.PureComponent {
-  defaultProps = {
+  static defaultProps = {
     tabs: [
       { title: '麻类' },
       { title: '棉类' },
