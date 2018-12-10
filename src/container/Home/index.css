@@ -1,0 +1,9 @@
+.content-wrap {
+  display: flex;
+}
+.menu-content {
+  flex: 1;
+}
+.content-wrap .am-grid.am-grid-square .am-grid-item:before {
+  padding-bottom: 72%;
+}

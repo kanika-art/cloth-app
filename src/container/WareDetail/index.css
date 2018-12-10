@@ -1,0 +1,9 @@
+.ware-intro, .ware-checked-info, .ware-agent-info { background-color: #ffffff;padding: 5px 0;margin-bottom: 10px; }
+.ware-intro p { margin: 5px 0 10px; }
+.price-section {margin-bottom: 10px;}
+.price-section .am-flexbox .am-flexbox-item {text-align: center;}
+.price-section span { color: red;}
+
+.ware-checked { background-color: #ffffff; }
+.one-section {color: #6b6b6b;letter-spacing: 1px;margin: 5px 0;}
+.one-section strong { font-weight: normal;margin-left: 5px;color: #000; }

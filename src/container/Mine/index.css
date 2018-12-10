@@ -1,0 +1,12 @@
+.owner-panel { height: 200px;background-color: #646262; }
+.owner-container {height: 50px;padding: 60px 16px 0;position: relative;}
+.owner-container img { width: 50px;display: inline-block;vertical-align: middle; }
+.owner-container strong {font-size: 18px;color: #ffffff;font-weight: normal;margin-left: 15px;}
+.owner-container a {color: #ffffff;position: absolute;right: 20px;top: 70px;font-size: 18px;}
+.order-item { border-bottom: 1px solid #c6c6c6; }
+.ower-list .am-grid.am-grid-square .am-grid-item .am-grid-item-inner-content .am-grid-icon {
+	width: 45%!important;
+}
+.ower-list .am-grid .am-flexbox .am-flexbox-item .am-grid-item-content .am-grid-item-inner-content .am-grid-text {
+	font-size: 16px;
+}

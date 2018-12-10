@@ -1,0 +1,4 @@
+.order-form .am-list-item img {width: 70px;height: 70px;margin-right: 5px;}
+.split-space {display: flex;justify-content: space-between;}
+.split-space strong {color: #fc2610;font-weight: normal;}
+.order-form .am-whitespace.am-whitespace-md {background: #f5f5f9;}
