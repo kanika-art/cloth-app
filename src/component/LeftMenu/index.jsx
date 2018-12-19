@@ -4,16 +4,16 @@ import { Tabs, WhiteSpace } from 'antd-mobile';
 export default class LeftMenu extends React.PureComponent {
   static defaultProps = {
     tabs: [
-      { title: '麻类' },
-      { title: '棉类' },
-      { title: '化纤' },
-      { title: '毛类' },
-      { title: '丝类' },
+      { title: '麻类', description: '麻类' },
+      { title: '棉类', description: '棉类' },
+      { title: '化纤', description: '化纤' },
+      { title: '毛类', description: '毛类' },
+      { title: '丝类', description: '丝类' },
     ],
   }
 
   onChange = (item) => {
-    console.log(item);
+    this.props.action({ parentLabel: item.label });
   }
 
   render() {
@@ -26,6 +26,7 @@ export default class LeftMenu extends React.PureComponent {
           tabBarPosition="left"
           tabDirection="vertical"
           tabBarBackgroundColor="#f3f3f3"
+          onTabClick={this.onChange}
           tabBarTextStyle={{padding: '0 30px', lineHeight: '36px'}}
           renderTabBar={props => <Tabs.DefaultTabBar {...props} page={data.length} />}
         >

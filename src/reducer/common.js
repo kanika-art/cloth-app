@@ -1,8 +1,11 @@
-import { GET_SKYLIGHT_LIST, GET_PRODUCT_TYPE_LIST } from '../action/common';
+import {
+  GET_SKYLIGHT_LIST, GET_PRODUCT_TYPE_LIST, GET_PRODUCT_TYPE_SECOND, GET_AGENT_LIST
+} from '../action/common';
 
 const defaultState = {
   skylightList: {},
-  productTypeList: {},
+  productTypeList: [],
+  productTypeSecond: [],
 }
 
 export default (state = defaultState, action) => {
@@ -16,6 +19,11 @@ export default (state = defaultState, action) => {
       return {
         ...state,
         productTypeList: action.data
+      }
+    case GET_PRODUCT_TYPE_SECOND:
+      return {
+        ...state,
+        productTypeSecond: action.data,
       }
     default:
       return state

@@ -8,11 +8,13 @@ import Address from './container/Address'
 import ModifyAddress from './container/ModifyAddress'
 import OrderList from './container/OrderList'
 import Login from './container/Login'
-import Register from './container/Register'
+import Register from './container/Register';
+import AgentDetail from './container/Agent/AgentDetail';
 
 const Routes = () => (
   <Router>
     <Switch>
+      <Route path="/agent/:id" component={AgentDetail} />
       <Route path="/detail/:id" component={WareDetail} />
       <Route path="/orderForm" component={OrderForm} />
       <Route path="/userInfo" component={UserInfo} />
