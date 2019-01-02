@@ -8,6 +8,15 @@ export const GET_USER_ADDRESS_BYID = 'GET_USER_ADDRESS_BYID';
 export const GET_USER_ORDER_BYID = 'GET_USER_ORDER_BYID';
 export const GET_USER_LOGIN_LOGS = 'GET_USER_LOGIN_LOGS';
 
+export async function postUserAccount(params) {
+  const result = await post(API.postUserAccount, params);
+  if (result && result.status === 200) {
+    return result.data;
+  }
+}
+
+
+
 export function getUsertList(params) {
   return async (dispatch) => {
     const result = await get(API.userList, params);
